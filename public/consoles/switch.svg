@@ -1,0 +1,68 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="switchBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#1d3557;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="joyconRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e63946;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="joyconBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d2ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="switchScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#switchBg)"/>
+  
+  <!-- Left Joy-Con (Red) -->
+  <rect x="100" y="90" width="45" height="130" rx="8" fill="url(#joyconRed)"/>
+  <rect x="105" y="95" width="35" height="120" rx="6" fill="#d63031" opacity="0.7"/>
+  
+  <!-- Left analog stick -->
+  <circle cx="122" cy="125" r="12" fill="#1a1a1a" opacity="0.8"/>
+  <circle cx="122" cy="125" r="8" fill="#2d3436"/>
+  
+  <!-- D-pad -->
+  <rect x="118" y="165" width="8" height="20" rx="2" fill="#1a1a1a"/>
+  <rect x="114" y="169" width="16" height="8" rx="2" fill="#1a1a1a"/>
+  
+  <!-- Center Screen -->
+  <rect x="145" y="95" width="110" height="120" rx="4" fill="#1a1a1a"/>
+  <rect x="150" y="100" width="100" height="110" rx="2" fill="url(#switchScreen)"/>
+  
+  <!-- Screen glow -->
+  <rect x="155" y="105" width="90" height="100" rx="2" fill="#3498db" opacity="0.1">
+    <animate attributeName="opacity" values="0.05;0.15;0.05" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Nintendo logo on screen -->
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ff4757" text-anchor="middle" opacity="0.4">Nintendo</text>
+  <text x="200" y="170" font-family="Arial, sans-serif" font-size="14" fill="#00d2ff" text-anchor="middle" opacity="0.4">SWITCH</text>
+  
+  <!-- Right Joy-Con (Blue) -->
+  <rect x="255" y="90" width="45" height="130" rx="8" fill="url(#joyconBlue)"/>
+  <rect x="260" y="95" width="35" height="120" rx="6" fill="#2980b9" opacity="0.7"/>
+  
+  <!-- Right analog stick -->
+  <circle cx="278" cy="185" r="12" fill="#1a1a1a" opacity="0.8"/>
+  <circle cx="278" cy="185" r="8" fill="#2d3436"/>
+  
+  <!-- ABXY buttons -->
+  <circle cx="278" cy="125" r="6" fill="#1a1a1a"/>
+  <circle cx="268" cy="135" r="6" fill="#1a1a1a"/>
+  <circle cx="288" cy="135" r="6" fill="#1a1a1a"/>
+  <circle cx="278" cy="145" r="6" fill="#1a1a1a"/>
+  
+  <!-- Home button -->
+  <circle cx="200" cy="230" r="8" fill="#2d3436" opacity="0.8"/>
+  <circle cx="200" cy="230" r="5" fill="#ecf0f1" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

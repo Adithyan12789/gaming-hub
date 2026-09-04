@@ -1,0 +1,104 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pcBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#240046;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pcCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3436;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rgbGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff006e;stop-opacity:1" />
+      <stop offset="33%" style="stop-color:#8338ec;stop-opacity:1" />
+      <stop offset="66%" style="stop-color:#3a86ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff006e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="rgbGlow">
+      <stop offset="0%" style="stop-color:#8338ec;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8338ec;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#pcBg)"/>
+  
+  <!-- RGB Glow effect -->
+  <ellipse cx="200" cy="140" rx="150" ry="110" fill="url(#rgbGlow)" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- PC Case -->
+  <rect x="130" y="70" width="140" height="150" rx="4" fill="url(#pcCase)"/>
+  
+  <!-- Tempered glass panel -->
+  <rect x="135" y="75" width="130" height="140" rx="3" fill="#1a1a1a" opacity="0.3"/>
+  
+  <!-- RGB strips -->
+  <rect x="140" y="80" width="120" height="4" fill="url(#rgbGrad1)" opacity="0.9">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="140" y="206" width="120" height="4" fill="url(#rgbGrad1)" opacity="0.9">
+    <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- GPU fans -->
+  <g opacity="0.8">
+    <!-- Fan 1 -->
+    <circle cx="170" cy="130" r="22" fill="#0d0d0d"/>
+    <circle cx="170" cy="130" r="20" fill="none" stroke="#8338ec" stroke-width="2" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0 170 130" to="360 170 130" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M 170 115 L 170 145" stroke="#8338ec" stroke-width="1.5" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0 170 130" to="360 170 130" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 155 130 L 185 130" stroke="#8338ec" stroke-width="1.5" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0 170 130" to="360 170 130" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Fan 2 -->
+    <circle cx="230" cy="130" r="22" fill="#0d0d0d"/>
+    <circle cx="230" cy="130" r="20" fill="none" stroke="#ff006e" stroke-width="2" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0 230 130" to="360 230 130" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M 230 115 L 230 145" stroke="#ff006e" stroke-width="1.5" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0 230 130" to="360 230 130" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 215 130 L 245 130" stroke="#ff006e" stroke-width="1.5" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0 230 130" to="360 230 130" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- RGB RAM sticks -->
+  <rect x="145" y="95" width="25" height="8" rx="1" fill="#2d3436"/>
+  <rect x="145" y="95" width="25" height="2" fill="#ff006e" opacity="0.8">
+    <animate attributeName="fill" values="#ff006e;#8338ec;#3a86ff;#ff006e" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <rect x="175" y="95" width="25" height="8" rx="1" fill="#2d3436"/>
+  <rect x="175" y="95" width="25" height="2" fill="#8338ec" opacity="0.8">
+    <animate attributeName="fill" values="#8338ec;#3a86ff;#ff006e;#8338ec" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Power button -->
+  <circle cx="200" cy="180" r="6" fill="#1a1a1a"/>
+  <circle cx="200" cy="180" r="4" fill="#3a86ff" opacity="0.8">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- IO ports -->
+  <rect x="145" y="190" width="10" height="4" rx="1" fill="#ff006e" opacity="0.6"/>
+  <rect x="160" y="190" width="10" height="4" rx="1" fill="#8338ec" opacity="0.6"/>
+  <rect x="175" y="190" width="10" height="4" rx="1" fill="#3a86ff" opacity="0.6"/>
+  
+  <!-- Monitor -->
+  <rect x="165" y="235" width="70" height="45" rx="2" fill="#1a1a1a"/>
+  <rect x="170" y="240" width="60" height="35" rx="1" fill="#2d3436"/>
+  <rect x="172" y="242" width="56" height="31" fill="#8338ec" opacity="0.15">
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Monitor stand -->
+  <rect x="195" y="280" width="10" height="8" fill="#2d3436"/>
+  <rect x="185" y="288" width="30" height="3" rx="1" fill="#2d3436"/>
+</svg>
