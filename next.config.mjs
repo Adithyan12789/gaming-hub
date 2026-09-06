@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Use a different directory name to avoid OneDrive sync conflicts
+  distDir: '.nextjs-build',
   typescript: {
     ignoreBuildErrors: true,
   },
   images: {
     unoptimized: true,
+    qualities: [75, 85, 95],
     remotePatterns: [
       {
         protocol: 'https',

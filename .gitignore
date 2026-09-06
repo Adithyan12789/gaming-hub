@@ -9,7 +9,12 @@ __v0_jsx-dev-runtime.ts
 # Environment variables
 .env*.local
 
-# Common ignores
+# Build directories (avoid OneDrive sync conflicts)
 node_modules
 .next/
+.nextjs-build/
+../.next-dev/
 .DS_Store
+
+# Development scripts
+dev.bat
